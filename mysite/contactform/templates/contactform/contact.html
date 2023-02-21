@@ -1,0 +1,30 @@
+{% extends 'contactform/base.html' %}
+{% block title  %}Contact - {{ block.super }}{% endblock %}
+{% block content %}
+<style type="text/css">
+	.olich{
+		padding-left: 650px;
+		padding-top: 20px;
+	}
+	.more{
+		padding-left: 700px;
+	}
+</style>
+		<div>
+		<div class="panel-heading">
+		<h4 class="olich" class="more">
+	Contact Form
+</h4>	
+		</div>
+		
+<div class="panel-body">
+<form role = "form" action="" method="post" class="olich">
+{% csrf_token %}
+{{form.as_p}}
+<button class="btn btn-success btn-sm" type="submit">
+	submit
+</button>	
+</form>	
+</div>
+</div>
+{% endblock %}

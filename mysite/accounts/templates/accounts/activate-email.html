@@ -1,0 +1,11 @@
+{% autoescape off %}
+Hi {{ user.username }},If this is you,Please click on the link below to confirm your registration for Freelance Manager Account in order to activate your account,
+
+http://{{ domain }}{% url 'activate'  uidb64=uid token=token %}
+
+If clicking the link above doesn't work, please copy and paste the URL in a new browser
+window instead.
+
+Sincerely,
+The Freelance Manager express Team.
+{% endautoescape %}

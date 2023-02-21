@@ -1,0 +1,20 @@
+{% extends 'accounts/loginbase.html' %}
+{% block content %}
+
+  {% if form.errors %}
+  <p>Sorry ,thats not a valid email</p>
+  {% endif %}
+  <div class="container">
+    <div class="card card-login mx-auto mt-5">
+      <div class="card-header">Referal to email</div>
+      <div class="card-body">
+      <p>We have sent you a password reset link to the email</p>Go to
+    <a href="/login/">Login</a>
+        <div class="text-center">
+          <a class="d-block small mt-3" href="/register/">Register an Account</a>Not the right email?
+          <a class="d-block small" href="/password_reset/">Forgot Password?</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  {% endblock %}

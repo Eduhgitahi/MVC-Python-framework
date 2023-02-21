@@ -1,0 +1,69 @@
+{% extends 'accounts/loginbase.html' %}
+{% block content %}
+
+
+	<div class="container">
+
+<div class="featured-post-wrapper" style="margin:100px 0px;">
+                            
+                            <div class="featured-post-text-wrapper">
+
+		<div class="row" style="margin-top:100px;">
+			<div class="col-md-4 col-md-offset-4"></div>
+			
+
+			<div class="col-md-4 col-md-offset-4">
+				<div class="login-panel panel panel-default">
+					<div class="panel-heading">
+						<strong><center><h3 class="panel-title">Please sign in here </h3></center></strong>
+					</div>
+					<div class="panel-body">
+						<form method="post" action="/accounts/login/">{% csrf_token %}
+
+							{% if messages %}
+<ul class="messages">
+    {% for message in messages %}
+<ol class="breadcrumb" style="background-color: black;">
+        <li{% if message.tags %} class="{{ message.tags }}"{% endif %}><strong>{{ message }} {{form.non_field_errors}}</strong></li>
+      </ol>     
+    {% endfor %}
+</ul>
+{% endif %}
+							 {{form.as_table}}<br>
+								<center>
+									<input class="btn btn-success btn-sm btn-block" type="submit" value="login"/>
+								</center>
+								<br><div class="text-center">
+          <a class="d-block small mt-3" href="/password_reset/">Forgot your password?</a> <br>
+          
+          <a class="d-block small" href="/register/">Register here</a><br><br>
+        </div>
+						</form>
+					</div>
+				</div>		
+			</div>
+
+			<div class="col-md-4 col-md-offset-4"></div>
+
+		</div>
+
+
+</div>
+                        </div>
+
+
+
+
+
+
+
+	</div>
+{% endblock %}
+{% block javascript %}
+<script>
+{% if not user.is_authenticated %}
+$("ul.nav.navbar-nav.navbar-right").css("display","none");
+{% endif %}
+</script>
+
+{% endblock %}

@@ -1,0 +1,32 @@
+{% extends 'contactform/base.html' %}
+{% block content %}
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>Contact us Form</title>
+  {% load staticfiles %}
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+
+  
+      <link rel="stylesheet" href="{% static 'css/style.css' %}">
+
+  
+</head>
+<style type="text/css">
+ 
+</style>
+<body>
+  <b><h1>Contact Us Form</h1></b>
+<form class="cf"  role = "form"  action="" method="post">{% csrf_token %}
+  
+  {{form}}
+   
+  <input type="submit" value="Submit" id="input-submit">
+</form>
+  
+  
+</body>
+</html>
+{% endblock %}

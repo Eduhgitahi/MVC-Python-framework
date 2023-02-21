@@ -1,0 +1,22 @@
+{% extends 'freelance/Indexuserw.html' %}
+{% load render_table from django_tables2 %}
+{% block content %}
+      <br>
+      <div class="card mb-3">
+        <div class="card-header">
+          <i class="fa fa-table"></i> Your clients appear here</div>
+        <div class="card-body">
+          <div class="table-responsive">
+            <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+              <tbody>
+               <tr><td>
+                  {% render_table table1 %}
+                </td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="card-footer small text-muted">Updated at {{ now }}</div>
+      </div>
+    </div>
+    {% endblock %}

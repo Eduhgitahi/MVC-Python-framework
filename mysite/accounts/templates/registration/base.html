@@ -1,0 +1,46 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width = device-width,initial-scale=1.0" >
+	<title>Password Reset Page</title>
+	<link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.min.css' %}">
+</head>
+<body class="c">
+<style type="text/css">
+body{
+	background-image: url("{% static 'images/background1.jpg' %}");
+	background-repeat: no-repeat;
+    background-size: cover;
+}
+</style>
+<nav class="navbar navbar-default" id = "colnav" >
+<div class="container-fluid" >
+<div class="navbar-header">
+	<h3><a href="/">Freelance Manager</a></h3>
+</div>
+	</div>
+	
+</nav>
+<div>
+<div class="row">
+<div class="col-md-4"></div>
+<div class="col-md-4"><div class="" style="border:0px solid grey; border-radius: 5px; background-color: #fff;">
+<div class="panel-heading" style="background-color: grey;">
+						<center><h3 class="panel-title">Change your password</h3></center>
+					</div>
+					<div style="margin: 10px;">
+{% block content %}
+
+{% endblock %}
+<br>
+{% block javascript %}</div></div></div>
+<div class="col-md-4"></div>
+</div>
+</div>
+<script src="{% static 'js/jquery.min.css' %}"></script>
+<script src="{% static 'js/bootstrap.min.js' %}"></script>
+{% endblock %}
+</body>
+</html>

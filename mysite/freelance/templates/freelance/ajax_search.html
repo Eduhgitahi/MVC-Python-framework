@@ -1,0 +1,15 @@
+{% if articles.count > 0 %}
+{% for article in articles %}
+<table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+              <tbody>
+              	<tr><td>Title</td><td>Due_date</td><td>Writer's Email</td><td>Attachment</td><td>Cost</td><td>Message</td><td>Created at</td><td>Order Number</td>
+              		</tr>
+               <tr>
+<td>{{ article.Title }}</td> <td>{{article.due_date}}</td> <td>{{article.writer_email}}</td> <td> <a href="{{article.attachment.url}}">{{article.attachment}}</a></td> <td>{{article.cost}}</td> 
+<td>{{article.Message}}</td> <td>{{article.created_at}}</td> <td>{{article.order_number}}</td>
+</tr></tbody></table>
+ 
+{% endfor %}
+{% else %}
+<li> None to show!</li>
+{% endif %}

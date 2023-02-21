@@ -1,0 +1,15 @@
+{% if articles.count > 0 %}
+{% for article in articles %}
+<table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+            
+            	
+            
+     <thead><tr><td>Username</td><td>Email</td> <td>Action</td>  </tr></thead>        	
+              <tbody><tr>
+<td>{{ article.username }}</td> <td>{{article.email}}</td> <td><a href="/site/join/{{ article.pk }}"><button type="button" class="btn-primary">Add to circle</button></a></td>
+</tr></tbody></table>
+ 
+{% endfor %}
+{% else %}
+<li> No one by that username!</li>
+{% endif %}

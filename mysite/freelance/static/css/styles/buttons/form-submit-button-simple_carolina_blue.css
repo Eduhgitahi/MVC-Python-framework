@@ -1,0 +1,53 @@
+/********* Simple Carolina Blue **********/
+
+.form-submit-button-simple_carolina_blue{
+
+    cursor: pointer;
+
+    -moz-border-radius:.5em;
+    -webkit-border-radius:.5em;
+    border-radius:.5em;
+
+    padding:8px 18px;
+
+    color: #14396a !important;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    text-shadow:1px 1px 0px #98d1f4;
+
+    border:1px solid #1e63a2 !important;
+
+	-moz-box-shadow:inset 0px 1px 0px 0px #bee3f9;
+	-webkit-box-shadow:inset 0px 1px 0px 0px #bee3f9;
+	box-shadow:inset 0px 1px 0px 0px #bee3f9 ;
+
+    background: #468dcf; /* old browsers */
+    background: -moz-linear-gradient(top, #63b9ee 0%, #468dcf 100%); /* firefox */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#63b9ee), color-stop(100%,#468dcf)); /* webkit */
+	background: linear-gradient(top, #63b9ee 0%, #468dcf 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#63b9ee', endColorstr='#468dcf', GradientType=0 ); /* ie */
+}
+
+.form-submit-button-simple_carolina_blue:hover{
+    border:1px solid #1e63a2 !important;
+    color: #14396a !important;
+    background: #509cd9; /* old browsers */
+    background: -moz-linear-gradient(top, #74c4f6 0%, #509cd9 100%); /* firefox */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#74c4f6), color-stop(100%,#509cd9)); /* webkit */
+	background: linear-gradient(top, #74c4f6 0%, #509cd9 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#74c4f6', endColorstr='#509cd9', GradientType=0 ); /* ie */
+}
+
+.form-submit-button-simple_carolina_blue:active{
+	
+    border:1px solid #1e63a2 !important;
+    color: #14396a !important;
+    position: relative;
+	top: 1px;
+    background: #509cd9; /* old browsers */
+    background: -moz-linear-gradient(top, #509cd9 0%, #74c4f6 100%); /* firefox */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#509cd9), color-stop(100%,#74c4f6)); /* webkit */
+	background: linear-gradient(top, #509cd9 0%, #74c4f6 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#509cd9', endColorstr='#74c4f6', GradientType=0 ); /* ie */
+}

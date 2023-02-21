@@ -1,0 +1,13 @@
+{% extends 'contactform/base.html' %}
+{% block content %}
+<strong><p class="c"><h4>You have successfully submited your message.Click <a href="/" id="click">here</a>to go back to site </h4></p><strong>
+<style type="text/css">
+	#click{
+		padding-left: 5px;
+		padding-right: 5px;
+	.c{
+		font-color: #fff;
+	}
+</style>
+<script>setTimeout(function(){window.location.href="/"},5000);</script>
+{% endblock %}

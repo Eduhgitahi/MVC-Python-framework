@@ -1,0 +1,15 @@
+{% if art.count > 0 %}
+{% for art in art %}
+<table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+              <tbody>
+              	<tr><td>Title</td><td>Client's Email</td><td>Attachment</td><td>Description</td><td>Created at</td><td>Order Number</td>
+              		</tr>
+               <tr>
+<td>{{ art.Title }}</td>  <td>{{art.client_email}}</td> <td> <a href="{{art.attachment.url}}">{{art.attachment}}</a></td>  
+<td>{{art.description}}</td> <td>{{art.created_at}}</td> <td>{{art.order_number}}</td>
+</tr></tbody></table>
+ 
+{% endfor %}
+{% else %}
+<li> None to show!</li>
+{% endif %}

@@ -1,0 +1,46 @@
+{% load staticfiles %}
+<nav class="navbar-fixed-to-top navbar navbar-expand-md  bg-dark navbar-laravel">
+    <div class="container">
+        <div class="navbar-header">
+                <!-- Brand -->
+                <a class="navbar-brand page-scroll sticky-logo" href="/">
+                  <h1><span>Freelance</span> Manager</h1>
+                  <!-- Uncomment below if you prefer to use an image logo -->
+                  <!-- <img src="img/logo.png" alt="" title=""> -->
+                </a>
+              </div>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <!-- Left Side Of Navbar -->
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                        <a class="nav-link" href="/">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/">About</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="/">Services</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="/">FAQs</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="/">Contacts</a>
+                </li>
+              
+            </ul>
+
+            <!-- Right Side Of Navbar -->
+            <ul class="navbar-nav ml-auto">
+                <!-- Authentication Links -->
+    
+                    <li class="nav-item">
+                        <a class="nav-link sales-btn" href="/accounts/login/">Login</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link trial-btn" href="/register/">Register</a>
+                    </li>
+            </ul>
+        </div>
+    </div>
+</nav>

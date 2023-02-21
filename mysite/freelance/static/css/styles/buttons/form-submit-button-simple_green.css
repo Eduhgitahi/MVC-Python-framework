@@ -1,0 +1,50 @@
+/********* Simple Green **********/
+
+.form-submit-button-simple_green{
+
+    cursor: pointer;
+
+    -moz-border-radius:.5em;
+    -webkit-border-radius:.5em;
+    border-radius:.5em;
+
+    padding:8px 18px;
+
+    color: #154d0c;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    text-shadow:1px 1px 0px #aade7c;
+
+    border:1px solid #268a16 !important;
+
+	-moz-box-shadow:inset 0px 1px 0px 0px #c9efab;
+	-webkit-box-shadow:inset 0px 1px 0px 0px #c9efab;
+	box-shadow:inset 0px 1px 0px 0px #c9efab;
+
+    background: #4ea20a; /* old browsers */
+    background: -moz-linear-gradient(top, #7bd82f 0%, #4ea20a 100%); /* firefox */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#7bd82f), color-stop(100%,#4ea20a)); /* webkit */
+	background: linear-gradient(top, #7bd82f 0%, #4ea20a 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#7bd82f', endColorstr='#4ea20a', GradientType=0 ); /* ie */
+}
+
+.form-submit-button-simple_green:hover{
+    border:1px solid #268a16 !important;
+    background: #5bb215; /* old browsers */
+    background: -moz-linear-gradient(top, #80dd32 0%, #5bb215 100%); /* firefox */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#80dd32), color-stop(100%,#5bb215)); /* webkit */
+	background: linear-gradient(top, #80dd32 0%, #5bb215 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#80dd32', endColorstr='#5bb215', GradientType=0 ); /* ie */
+}
+
+.form-submit-button-simple_green:active{
+	border:1px solid #268a16 !important;
+    position: relative;
+	top: 1px;
+    background: #5bb215; /* old browsers */
+    background: -moz-linear-gradient(top, #5bb215 0%, #80dd32 100%); /* firefox */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#5bb215), color-stop(100%,#80dd32)); /* webkit */
+	background: linear-gradient(top, #5bb215 0%, #80dd32 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#5bb215', endColorstr='#80dd32', GradientType=0 ); /* ie */
+}
